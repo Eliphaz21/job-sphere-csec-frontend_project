@@ -1,8 +1,8 @@
-# 🚀 JobSphere
+#  JobSphere
 
 A modern, responsive job portal web application built with React, Vite, and Tailwind CSS. JobSphere allows users to browse jobs, view job details, apply to open positions, and manage their applications seamlessly.
 
-## ✨ Features
+##  Features
 
 - **User Authentication**: Secure Sign Up and Log In pages with robust form validation.
 - **Job Dashboard**: Browse a comprehensive list of available jobs.
@@ -10,7 +10,7 @@ A modern, responsive job portal web application built with React, Vite, and Tail
 - **Detailed Listings**: View full job descriptions, responsibilities, and company details.
 - **Responsive Design**: A sleek, mobile-friendly interface that looks great on any device.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Frontend Core**: React 19, TypeScript, Vite
 - **Styling**: Tailwind CSS v4
@@ -18,13 +18,12 @@ A modern, responsive job portal web application built with React, Vite, and Tail
 - **Forms & Validation**: Formik & Yup
 - **API Requests**: Axios
 - **Icons**: Lucide React
+## This how it looks like the  website
 
-## 🚀 Getting Started
+
+##  Getting Started
 
 Follow these simple steps to run the project locally on your machine.
-
-### Prerequisites
-Make sure you have [Node.js](https://nodejs.org/) installed before starting.
 
 ### 1. Clone the project
 ```bash
@@ -47,10 +46,4 @@ npm run dev
 
 Open your browser and navigate to `http://localhost:3000` to see the app running!
 
-## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
-
-## 📝 License
-
-This project is open-source and available for anyone to use and learn from!

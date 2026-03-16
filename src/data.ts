@@ -24,4 +24,4 @@ export const DUMMY_JOBS: Job[] = [
       'Troubleshoot and debug production issues.'
     ]
   },
-];
+]; 
