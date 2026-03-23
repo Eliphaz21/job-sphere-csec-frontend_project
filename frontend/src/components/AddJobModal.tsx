@@ -94,7 +94,8 @@ export const AddJobModal = ({ isOpen, onClose, onJobAdded }: AddJobModalProps) =
             </div>
             <div>
               <label className="block text-sm font-bold mb-1">Company Logo URL</label>
-              <input name="logo" value={formData.logo} onChange={handleChange} className="w-full border p-2 rounded" />
+              <input name="logo" value={formData.logo} onChange={handleChange} className="w-full border p-2 rounded" placeholder="e.g. https://.../logo.png" />
+              <p className="text-[11px] text-red-500 mt-1 font-medium leading-tight">Must be a direct image link (ending in .png, .jpg)</p>
             </div>
           </div>
           <div>
