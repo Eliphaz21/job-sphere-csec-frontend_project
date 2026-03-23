@@ -100,7 +100,8 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
       if (job.salary < filterMin || (filterMax < 150000 && job.salary > filterMax)) {
         return false;
       }
-      if (filters.datePosted !== 'All Time' && job.createdAt) {
+      if (filters.datePosted !== 'All Time') {
+        if (!job.createdAt) return false;
         const diffHours = (Date.now() - new Date(job.createdAt).getTime()) / (1000 * 60 * 60);
         if (filters.datePosted === 'Last 24 Hours' && diffHours > 24) return false;
         if (filters.datePosted === 'Last 7 Days' && diffHours > 24 * 7) return false;

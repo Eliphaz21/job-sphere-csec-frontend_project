@@ -1,8 +1,19 @@
 import React from 'react';
-import { Bookmark, Share2, Trash2 } from 'lucide-react';
+import { Bookmark, Share2, Trash2, Clock } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Job } from '../types';
 
+const formatDistanceToNow = (dateString?: string) => {
+  if (!dateString) return '';
+  const date = new Date(dateString);
+  const diffHours = (Date.now() - date.getTime()) / (1000 * 60 * 60);
+  if (diffHours < 1) return 'Just now';
+  if (diffHours < 24) return `${Math.floor(diffHours)}h ago`;
+  const diffDays = diffHours / 24;
+  if (diffDays < 30) return `${Math.floor(diffDays)}d ago`;
+  const diffMonths = diffDays / 30;
+  return `${Math.floor(diffMonths)}mo ago`;
+};
 interface JobCardProps {
   job: Job;
   onClick: () => void;
@@ -37,7 +48,15 @@ export const JobCard = ({ job, onClick, onBookmark, onRemove }: JobCardProps) =>
         <div className="flex justify-between items-start mb-1">
           <div>
             <h3 className="text-xl font-bold text-gray-900 group-hover:text-[#0046D5] transition-colors">{job.title}</h3>
-            <p className="text-sm text-gray-500 font-medium mb-2">{job.company}</p>
+            <div className="flex items-center gap-3 mb-2">
+              <p className="text-sm text-gray-500 font-medium">{job.company}</p>
+              {job.createdAt && (
+                <div className="flex items-center gap-1 text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-medium">
+                  <Clock className="w-3 h-3" />
+                  {formatDistanceToNow(job.createdAt)}
+                </div>
+              )}
+            </div>
           </div>
           <div className="flex gap-2">
             <button 
