@@ -5,9 +5,10 @@ import { Job } from '../types';
 interface SavedJobItemProps {
   job: Job;
   key?: React.Key;
+  onRemove?: (job: Job) => void;
 }
 
-export const SavedJobItem = ({ job }: SavedJobItemProps) => {
+export const SavedJobItem = ({ job, onRemove }: SavedJobItemProps) => {
   const [imgError, setImgError] = React.useState(false);
   
   const getLogoBg = (company: string) => {
@@ -39,7 +40,13 @@ export const SavedJobItem = ({ job }: SavedJobItemProps) => {
         <div className="flex-1 min-w-0">
           <div className="flex justify-between items-start gap-2">
             <h4 className="text-lg font-bold text-gray-900 truncate">{job.title}</h4>
-            <button className="text-gray-300 hover:text-gray-500 transition-colors shrink-0">
+            <button 
+              className="text-gray-300 hover:text-gray-500 transition-colors shrink-0"
+              onClick={(e) => {
+                e.stopPropagation();
+                if (onRemove) onRemove(job);
+              }}
+            >
               <X className="w-5 h-5" />
             </button>
           </div>

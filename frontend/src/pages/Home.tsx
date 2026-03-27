@@ -179,7 +179,11 @@ export const HomePage = ({ onJobClick, user }: HomePageProps) => {
               </div>
               <div className="space-y-1">
                 {savedJobsView.map(job => (
-                  <SavedJobItem key={job._id || job.id} job={job} />
+                  <SavedJobItem 
+                    key={job._id || job.id} 
+                    job={job} 
+                    onRemove={() => wrapToggleBookmark(job)}
+                  />
                 ))}
               </div>
             </div>
