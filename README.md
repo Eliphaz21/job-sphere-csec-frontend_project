@@ -8,14 +8,9 @@ The project is divided into two main folders:
 - **Frontend**: A highly responsive, modern UI built for job seekers.
 - **Backend**: A secure, scalable RESTful API handling business logic and data persistence.
 ## Project Video Link: https://youtu.be/9rXZsi4k7bM
-   ##  Project Demo:
-<h2 align="center"> Watch Demo</h2>
 
-<p align="center">
-  <a href="https://youtu.be/9rXZsi4k7bM">
-    <img src="https://img.youtube.com/vi/9rXZsi4k7bM/maxresdefault.jpg" width="600" alt="Watch Demo"/>
-  </a>
-</p>
+##  Live Demo (Click to Watch)
+[![Watch Demo](https://img.youtube.com/vi/9rXZsi4k7bM/maxresdefault.jpg)](https://youtu.be/9rXZsi4k7bM)
 
 ---
 
