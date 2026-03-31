@@ -10,15 +10,7 @@ The project is divided into two main folders:
 ## Project Video Link: https://youtu.be/9rXZsi4k7bM
 
 ##  Live Demo (Click to Watch)
-
-<h2 align="center">🎥 Live Demo</h2>
-
-<p align="center">
-  <a href="https://youtu.be/9rXZsi4k7bM">
-    <img src="frontend/src/assets/honepage.png" width="800" alt="Project Demo"/>
-  </a>
-</p>
-
+[![Watch Demo](https://img.youtube.com/vi/9rXZsi4k7bM/0.jpg)](https://youtu.be/9rXZsi4k7bM)
 ---
 
 ##  Frontend Architecture
